@@ -5,6 +5,7 @@ import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { menuData } from '../data/MenuData';
+import './Navbar.css'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  //window.addEventListener('resize', showButton);
 
   return (
     <>
