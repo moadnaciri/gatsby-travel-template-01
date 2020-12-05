@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/email.jpg'
-import { Button } from './Button'
+//import { Button } from './Button'
 
 function Email() {
     return (
@@ -14,13 +14,11 @@ function Email() {
                         <label htmlFor="email">
                             <input data-aos="fade-right" type="email" placeholder="Enter your email" id="email" />
                         </label>
-                        <EmailButton
+                        <button className='Button emailB'
                             as="button"
                             type="submit"
-                            primary="true"
-                            round="true"
                             data-aos="fade-right"
-                        >Sign Up</EmailButton>
+                        >Sign Up</button>
                     </FormWrap>
                 </form>
             </EmailContent>
@@ -93,19 +91,5 @@ const FormWrap = styled.div`
             width: 100%;
             margin-right: 0;
         }
-    }
-`
-
-const EmailButton = styled(Button)`
-    height: 48px;
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        min-width: 350px;
-    }
-
-    @media screen and (max-width: 400px) {
-        width: 100%;
-        min-width: 250px;
     }
 `

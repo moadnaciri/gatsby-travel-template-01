@@ -84,3 +84,38 @@
   margin-bottom: 2rem;
   font-weight: 400;
 }
+
+.Button {
+  background: #f26a2e;
+  white-space: nowrap;
+  padding: 16px 40px;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s !important;
+  border-radius: 50px;
+}
+
+.emailB {
+  height: 48px;
+  padding: 10px 32px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .emailB {
+    width: 100%;
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .emailB {
+    width: 100%;
+    min-width: 250px;
+  }
+}

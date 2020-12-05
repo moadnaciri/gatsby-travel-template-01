@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
@@ -47,11 +47,12 @@ function Trips({ heading }) {
                                 {item.node.name}
                             </ProductTitle>
                         </TextWrap>
-                        <Button to="/trips" primary="true" round="true" style={{
+                        <Link className='Button' to="/trips" style={{
                             position: 'absolute',
                             top: '420px',
-                            fontSize: '14px'
-                        }}>{item.node.button}</Button>
+                            fontSize: '14px',
+                            padding: '10px 32px',
+                        }}>{item.node.button}</Link>
                     </ProductInfo>
                 </ProductCard>
             )

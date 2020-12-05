@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Button } from './Button'
 import Video from '../assets/videos/travel-3.mp4'
 import './Hero.css'
+import { Link } from 'gatsby'
 
 
 function Hero() {
@@ -15,7 +16,7 @@ function Hero() {
                 <div className='HeroItems'>
                     <h1 className='HeroH1'>Unreal Destinations</h1>
                     <p className='HeroP'>Out of this world</p>
-                    <Button primary='true' big='true' round='true' to='/trips'>Travel Now</Button>
+                    <Link className='Button' to='/trips'>Travel Now</Link>
                 </div>
             </div>
         </div>
