@@ -9,7 +9,7 @@ function Error() {
     return (
         <div className='HeroContainer'>
             <div className='HeroBg'>
-                <video className='VideoBg' src={Video} type='video/mp4' autoPlay loop muted playsInline />
+                <Img src={Image}/>
             </div>
             <div className='HeroContent'>
                 <div className='HeroItems'>
