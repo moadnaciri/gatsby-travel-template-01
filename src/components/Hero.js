@@ -3,25 +3,6 @@ import styled from 'styled-components'
 import { Button } from './Button'
 import Video from '../assets/videos/travel-3.mp4'
 
-function Hero() {
-    return (
-        <HeroContainer>
-            <HeroBg>
-                <VideoBg src={Video} type='video/mp4' autoPlay loop muted playsInline />
-            </HeroBg>
-            <HeroContent>
-                <HeroItems>
-                    <HeroH1>Unreal Destinations</HeroH1>
-                    <HeroP>Out of this world</HeroP>
-                    <Button primary='true' big='true' round='true' to='/trips'>Travel Now</Button>
-                </HeroItems>
-            </HeroContent>
-        </HeroContainer>
-    )
-}
-
-export default Hero
-
 const HeroContainer = styled.div`
     background: #0c0c0c;
     display: flex;
@@ -105,5 +86,26 @@ const HeroP = styled.p`
     margin-bottom: 2rem;
     font-weight: 400;
 `
+
+
+function Hero() {
+    return (
+        <HeroContainer>
+            <HeroBg>
+                <VideoBg src={Video} type='video/mp4' autoPlay loop muted playsInline />
+            </HeroBg>
+            <HeroContent>
+                <HeroItems>
+                    <HeroH1>Unreal Destinations</HeroH1>
+                    <HeroP>Out of this world</HeroP>
+                    <Button primary='true' big='true' round='true' to='/trips'>Travel Now</Button>
+                </HeroItems>
+            </HeroContent>
+        </HeroContainer>
+    )
+}
+
+export default Hero
+
 
 
