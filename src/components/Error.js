@@ -9,7 +9,7 @@ function Error() {
     return (
         <div className='HeroContainer'>
             <div className='HeroBg'>
-                <Img src={Image}/>
+                <img className='ImgBg' src={Image}/>
             </div>
             <div className='HeroContent'>
                 <div className='HeroItems'>

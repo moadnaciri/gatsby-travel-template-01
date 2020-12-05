@@ -44,6 +44,13 @@
   object-fit: cover;
 }
 
+.ImgBg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .HeroContent {
   z-index: 3;
   height: calc(100vh - 80px);
